@@ -35,12 +35,12 @@
     <h1>Магазин готовых шаблонов</h1>
     <div class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <section>
+      <div>
         <p>Сортировать:</p>
         <a href="#">по цене</a>
         <a href="#">по типу</a>
         <a href="#">по названию</a>
-      </section>
+      </div>
       <form class="filters" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимость:</legend>
@@ -58,15 +58,15 @@
           <legend>Сетка</legend>
           <ul>
             <li>
-              <input type="radio" name="adaptive" id="filter-adaptive" checked>
+              <input type="radio" name="filter" id="filter-adaptive" value="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="fixed" id="filter-fixed">
+              <input type="radio" name="filter" id="filter-fixed" value="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="rubber" id="filter-rubber">
+              <input type="radio" name="filter" id="filter-rubber" value="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
@@ -75,23 +75,23 @@
           <legend>Особенности:</legend>
           <ul>
             <li>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <input type="checkbox" name="features" id="filter-slider" value="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" name="advantages" id="filter-benefits">
+              <input type="checkbox" name="features" id="filter-benefits" value="filter-benefits">
               <label for="filter-benefits">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
+              <input type="checkbox" name="features" id="filter-news" value="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="Gallery" id="filter-gallery">
+              <input type="checkbox" name="features" id="filter-gallery" value="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="cart" id="filter-cart">
+              <input type="checkbox" name="features" id="filter-cart" value="filter-cart">
               <label for="filter-cart">Корзина</label>
             </li>
           </ul>
