@@ -53,6 +53,7 @@ a {
 .slider-item h2 {
   font-size: 55px;
   line-height: 42px;
+  margin: 0;
 }
 
 .offer-item h3 {
@@ -124,12 +125,12 @@ a {
 .features caption {
   text-transform: uppercase;
   font-weight: 700;
-  }
+}
 
 .features td {
   font-size: 45px;
   font-weight: 700;
-  }
+}
 
 .partners ul {
   list-style: none;
@@ -145,7 +146,7 @@ a {
   width: 220px;
   padding: 14px 5px;
   background-color: #fb565a;
-  }
+}
 
 .social-text b {
   font-size: 36px;
@@ -167,7 +168,7 @@ a {
 .contacts-form-item textarea {
   background-color: transparent;
   border: 2px solid #d7dcde;
- }
+}
 
 .modal h2 {
 font-size: 36px;
@@ -177,49 +178,49 @@ font-size: 36px;
   width: 260px;
   padding: 11px 5px;
   background-color: #fb565a;
-  }
+}
 
 .templates h1 {
   font-size: 55px;
-  line-height: 30px;
+  line-height: 55px;
   background-color: #eeeeee;
-  }
+}
 
-.filter fieldset {
+.catalog fieldset {
   border: none;
-  }
+}
 
-.filter legend {
+.catalog legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  }
+}
 
-.filter ul {
+.catalog ul {
   list-style: none;
   line-height: 28px;
-  }
+}
 
 .filter-input label,
 .filter-input label {
   color: #b8b8b8;
 }
 
-.filter button{
+.catalog button{
   width: 260px;
   padding: 11px 5px;
   background-color: #eeeeee;
   color: #000000;
-    }
+}
 
 .catalog-list {
   list-style: none;
-  }
+}
 
 .catalog-item {
   background-color: #eeeeee;
-  }
+}
 
 .catalog-item h3 {
   font-size: 18px;
@@ -242,4 +243,160 @@ font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #eeeeee;
+}
+
+/* ----- Сеточные стили ----- */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation li {
+  padding: 20px;
+}
+
+.main-header-logo {
+  display: block;
+  width: 150px;
+  height: 65px;
+}
+
+.offer {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.offer-list {
+  display: flex;
+}
+
+.offer-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.about-studio {
+  display: flex;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.partners-list {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  padding-left: 20px;
+  margin-bottom: 70px;
+}
+
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.social-text {
+  margin-left: 140px;
+}
+
+.templates h1 {
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+}
+
+.sorting {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.sorting p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.sorting-list{
+  font-size: 14px;
+  line-height: 18px;
+  color:#000000;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.catalog-item {
+  margin-top: 30px;
+  padding: 0;
+}
+
+.pagination-list {
+  display: flex;
+  width: 740px;
+  height: 50px;
+  padding-left: 20px;
+  margin-bottom: 45px;
 }
