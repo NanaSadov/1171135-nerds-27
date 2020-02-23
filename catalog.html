@@ -37,7 +37,9 @@
     </nav>
   </header>
   <main class="templates">
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <div class="title-container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
     <section class="catalog container">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filters" action="https://echo.htmlacademy.ru" method="get">
@@ -216,17 +218,23 @@
       </div>
     </section>
     <section class="social container">
-      <ul class="social-list">
-        <li>
-          <a href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграмм</a>
-        </li>
-      </ul>
+        <ul class="social-list">
+          <li class="social-button-vk">
+            <a href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-button-fb">
+            <a href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-button-inst">
+            <a href="#">
+              <span class="visually-hidden">Инстаграмм</span>
+            </a>
+          </li>
+        </ul>
       <div class="social-text">
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
