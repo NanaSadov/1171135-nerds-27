@@ -76,12 +76,12 @@
         <li class="offer-item offer-item-app">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button green-button" href="#">Заказать</a>
         </li>
         <li class="offer-item offer-item-presentation">
           <h3 class="">Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button" href="#">Заказать</a>
+          <a class="button yellow-button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
@@ -89,7 +89,7 @@
   <h2 class="visually-hidden">О нас</h2>
   <div class="about">
     <b class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-    <p>Исповедуем принципы минимализма и чистоты.
+    <p class="about-text">Исповедуем принципы минимализма и чистоты.
       Ставим математический расчет превыше креатива.
       Работаем не покладая рук, как роботы.
     </p>
@@ -104,18 +104,16 @@
     <img src="img/nerds-illustration.jpg" width="360" height="208"alt="второй Логотип Дизайн-студии «Нёрдс»">
     <table>
       <caption> С 2004 года Любим точность во всем:</caption>
-      <thead>
-        <tr>
-          <th>Уровень самоотдачи</th>
-          <th>Соблюдение сроков</th>
-          <th>Минимальная предоплата</th>
-        </tr>
-      </thead>
-      <tbody>
+      <tbody class="features-list">
         <tr>
           <td>146<sup>%</sup></td>
           <td>100<sup>%</sup></td>
           <td>50<sup>%</sup></td>
+        </tr>
+        <tr>
+          <th>Уровень самоотдачи</th>
+          <th>Соблюдение сроков</th>
+          <th>Минимальная предоплата</th>
         </tr>
       </tbody>
     </table>
@@ -152,29 +150,31 @@
   <section class="map">
     <h2 class="visually-hidden">Контакты</h2>
     <img src="img/map.png" alt="Карта">
-    <div class="contacts">
-      <b>NЁRDS DESIGN STUDIO</b>
-      <p>191186, Санкт-Петербург, <br>
-        ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
-      <a class="button" href="#">Напишите нам</a>
+    <div class="map-contacts">
+      <div class="contacts">
+        <b>NЁRDS DESIGN STUDIO</b>
+        <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
+        <a class="button" href="#">Напишите нам</a>
+      </div>
     </div>
   </section>
 
   <section class="social container">
       <ul class="social-list">
-        <li class="social-button-vk">
-          <a href="#">
+        <li class="social-item">
+          <a class="social-link social-link-vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="social-button-fb">
-          <a href="#">
+        <li class="social-item">
+          <a class="social-link social-link-fb" href="#">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
-        <li class="social-button-inst">
-          <a href="#">
+        <li class="social-item">
+          <a class="social-link social-link-inst" href="#">
             <span class="visually-hidden">Инстаграмм</span>
           </a>
         </li>
