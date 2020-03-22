@@ -179,7 +179,8 @@ margin-bottom: 38px;
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .about-list-line {
@@ -251,7 +252,6 @@ border-top: 2px solid #eee;
     outline: 0;
 }
 
-}
 .partners-list li:active img {
     opacity: .1;
 }
@@ -266,7 +266,8 @@ border-top: 2px solid #eee;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 1160px;
   height: 100%;
   padding: 0 20px;
@@ -278,7 +279,10 @@ border-top: 2px solid #eee;
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .contacts p {
@@ -385,8 +389,10 @@ visibility: hidden;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,.3);
-  animation-name: modal-back;
-  animation-duration: .4s;
+  -webkit-animation-name: modal-back;
+          animation-name: modal-back;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
 }
 
 .modal-contacts {
@@ -397,8 +403,10 @@ visibility: hidden;
   color: #323232;
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
-  animation-name: modal;
-  animation-duration: .4s;
+  -webkit-animation-name: modal;
+          animation-name: modal;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
 }
 
 .modal-close {
@@ -480,6 +488,9 @@ visibility: hidden;
   text-align: center;
   padding-top: 9px;
   padding-bottom: 43px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
   display: none;
 }
 

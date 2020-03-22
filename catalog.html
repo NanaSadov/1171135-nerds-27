@@ -5,8 +5,7 @@
   <meta charset="utf-8">
   <title>Дизайн-студия «Нёрдс»</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -128,7 +127,7 @@
               <h3>
                 <a href="catalog.html">Sedona</a>
               </h3>
-              <p>Информационный сайт <br> для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -140,31 +139,31 @@
               <h3>
               <a href="catalog.html">Pink</a>
             </h3>
-            <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-barbershop.jpg" width="350" height="576" alt="Сайт салона красоты. Barbershop">
+              <img src="img/img-barbershop.jpg" width="350" height="576" alt="Сайт салона красоты Barbershop">
             </p>
             <div class="catalog-item-info">
               <h3>
                 <a href="catalog.html">Barbershop</a>
               </h3>
-              <p>Сайт салона красоты. <br> Для мужчин, да.</p>
+              <p>Сайт салона красоты. Для&nbsp;мужчин, да.</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
-              <img src="img/img-mishka.jpg" width="350" height="576" alt="Интернет-магазин вязаных игрушек Mishka">
+              <img src="img/img-mishka.jpg" width="350" height="576" alt="Интернет-магазин вязаных игрушек Mishka">
             </p>
             <div class="catalog-item-info">
               <h3>
                 <a href="catalog.html">Mishka</a>
               </h3>
-              <p>Интернет-магазин <br>вязаных игрушек</p>
+              <p>Интернет-магазин вязаных&nbsp;игрушек</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -176,7 +175,7 @@
               <h3>
                 <a href="catalog.html">A Plus</a>
               </h3>
-              <p>Лендинг курсов повышения <br> квалификации</p>
+              <p>Лендинг курсов повышения квалификации</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
@@ -188,11 +187,10 @@
               <h3>
                 <a href="catalog.html">Кваст</a>
               </h3>
-              <p>Промо-сайт производителя <br> крафтового кваса</p>
+              <p>Промо-сайт производителя крафтового кваса</p>
               <a class="button" href="#">9 900 руб.</a>
             </div>
           </li>
-        </ul>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">
@@ -214,18 +212,18 @@
   <footer>
     <section class="map">
       <h2 class="visually-hidden">Контакты</h2>
-      <img src="img/map.png" alt="Карта">
+      <img src="img/map.png" width="1440" height="416" alt="Карта">
       <div class="map-contacts">
         <div class="contacts">
           <b>NЁRDS DESIGN STUDIO</b>
-          <p>191186, Санкт-Петербург, <br>
-            ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
+          <p>191186, Санкт-Петербург,
+            ул.&nbsp;Б. Конюшенная, д. 19/8</p>
+          <p>тел. <a href="tel:78122757575" class="tel">+7 (812) 275-75-75</a></p>
           <a class="button button-link" href="#">Напишите нам</a>
         </div>
       </div>
     </section>
-    <section class="social container">
+    <div class="social container">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link social-link-vk" href="#">
@@ -247,7 +245,7 @@
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-    </section>
+    </div>
   </footer>
 
   <div class="modal hidden">
@@ -276,19 +274,7 @@
     </section>
   </div>
 
-  <script>
-  var link = document.querySelector(".button-link");
-  var popup = document.querySelector(".modal");
-  var close = popup.querySelector(".modal-close");
-  link.addEventListener("click", function (evt) {
-     evt.preventDefault();
-     popup.classList.remove("hidden");
-   });
-   close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("hidden");
-  });
-  </script>
+<script src="script.min.js"></script>
 
 </body>
 
