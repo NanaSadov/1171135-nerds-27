@@ -53,13 +53,13 @@
           </div>
         </div>
         <div class="slider-controls">
-          <button type="button" class="current">
+          <button type="button" class="current slide-1">
             <span class="visually-hidden">Показать первый слайд</span>
           </button>
-          <button type="button">
+          <button type="button" class="current slide-2">
             <span class="visually-hidden">Показать второй слайд</span>
           </button>
-          <button type="button">
+          <button type="button" class="current slide-3">
             <span class="visually-hidden">Показать третий слайд</span>
           </button>
         </div>
@@ -155,8 +155,8 @@
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Санкт-Петербург, <br>
           ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. <a href="tel:78122757575">+7 (812) 275-75-75</a></p>
-        <a class="button" href="#">Напишите нам</a>
+        <p>тел. <a href="tel:78122757575" class="tel">+7 (812) 275-75-75</a></p>
+        <a class="button button-link" href="#">Напишите нам</a>
       </div>
     </div>
   </section>
@@ -186,25 +186,45 @@
   </section>
 </footer>
 
-<section class="modal modal-contacts">
-  <h2>Напишите нам</h2>
-  <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
-    <p class="contacts-form-item">
-      <label for="name">Ваше имя:</label>
-      <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="contacts-form-item">
-      <label for="email">Ваш e-mail:</label>
-      <input id="email" type="email" name="email" placeholder="email@example.com">
-    </p>
-    <p class="contacts-form-item">
-      <label for="message">Текст письма:</label>
-      <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
-    </p>
-    <button class="button" type="submit">Отправить</button>
-  </form>
-  <button>Закрыть</button>
-</section>
+<div class="modal hidden">
+  <section class="modal-contacts">
+    <h2>Напишите нам</h2>
+    <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contacts-form-flex">
+        <fieldset class="contacts-form-item">
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </fieldset>
+        <fieldset class="contacts-form-item">
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="email" name="email" placeholder="email@example.com">
+        </fieldset>
+      </div>
+      <fieldset class="contacts-form-item">
+        <label for="message">Текст письма:</label>
+        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+      </fieldset>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
+</div>
+
+<script>
+var link = document.querySelector(".button-link");
+var popup = document.querySelector(".modal");
+var close = popup.querySelector(".modal-close");
+link.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   popup.classList.remove("hidden");
+ });
+ close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("hidden");
+});
+</script>
 
   </body>
 </html>

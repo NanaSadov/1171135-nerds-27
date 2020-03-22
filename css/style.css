@@ -81,6 +81,30 @@ img {
   font-weight: 500;
 }
 
+.current {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  margin: 0 9px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-1::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+
 .offer-item h3 {
   font-size: 24px;
   line-height: 42px;
@@ -168,12 +192,17 @@ margin-bottom: 38px;
   text-transform: uppercase;
   font-weight: 700;
   margin: 27px;
-  text-align: right;
+  text-align: left;
 }
 
 .features td {
   font-size: 45px;
   font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.features th {
+  text-align: left;
 }
 
 .partners ul {
@@ -197,6 +226,10 @@ margin-bottom: 38px;
     position: relative;
 }
 
+.partners-list img {
+  opacity: .2;
+}
+
 .partners-list {
 border-bottom: 2px solid #eee;
 border-top: 2px solid #eee;
@@ -213,9 +246,20 @@ border-top: 2px solid #eee;
     right: -1px;
 }
 
+.partners-list li:focus img, .partners-list li:hover img {
+    opacity: 1;
+    outline: 0;
+}
+
+}
+.partners-list li:active img {
+    opacity: .1;
+}
+
 .map {
   position: relative;
   height: 416px;
+  margin-bottom: 70px;
 }
 
 .map-contacts {
@@ -230,8 +274,6 @@ border-top: 2px solid #eee;
 
 .contacts {
   background-color: #ffffff;
-  color: #666666;
-  width: 320px;
   padding: 50px;
   position: absolute;
   left: 0;
@@ -239,10 +281,24 @@ border-top: 2px solid #eee;
   transform: translateY(-50%);
 }
 
+.contacts p {
+  color: #666666;
+}
+
+.tel {
+  color: #666666;
+}
+
+.contacts b {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .contacts .button {
   width: 220px;
   padding: 14px 5px;
   background-color: #fb565a;
+  margin-top: 23px;
 }
 
 .social-text b {
@@ -257,12 +313,16 @@ border-top: 2px solid #eee;
   list-style: none;
 }
 
+.contacts-form-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacts-form {
   font-weight: 700;
 }
 
 .contacts-form-item {
-  padding: 0;
   margin: 0;
   border: none;
 }
@@ -307,6 +367,26 @@ margin-bottom: 47px;
   width: 260px;
   padding: 11px 5px;
   background-color: #fb565a;
+  border: none;
+}
+
+.hidden {
+visibility: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.3);
+  animation-name: modal-back;
+  animation-duration: .4s;
 }
 
 .modal-contacts {
@@ -387,6 +467,10 @@ margin-bottom: 47px;
   padding-top: 40px;
 }
 
+.catalog-item-info a{
+  color: #000000;
+}
+
 .catalog-item-info {
   position: absolute;
   bottom: 0;
@@ -422,7 +506,8 @@ margin-bottom: 47px;
   margin: 0 auto;
 }
 
-.catalog-item:focus, .catalog-item-info, .catalog-item:hover, .catalog-item-info {
+.catalog-item:focus .catalog-item-info,
+.catalog-item:hover .catalog-item-info {
   display: block;
   min-height: 231px;
   box-shadow: 0 6px 15px 0 rgba(0,1,1,.25);
@@ -641,16 +726,20 @@ margin-bottom: 47px;
   padding: 0;
 }
 
-.sorting-list{
+.sorting-list {
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0,0,0,.3);
+  color: #eeeeee;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   width: 290px;
   padding-left: 150px;
   margin: 0;
+}
+
+.sorting-list a {
+  color: #eeeeee;
 }
 
 .catalog-list {
@@ -878,7 +967,8 @@ margin-bottom: 47px;
   border-bottom: 2px solid #fb565a;
 }
 
-.site-navigation a:focus:not(.site-navigation-active), .site-navigation a:hover:not(.site-navigation-active) {
+.site-navigation a:focus:not(.site-navigation-active),
+.site-navigation a:hover:not(.site-navigation-active) {
   color: #fb565a;
 }
 
@@ -927,7 +1017,7 @@ margin-bottom: 47px;
 }
 
 .sorting-list a:hover {
-  color: rgba(0,0,0,.6);
+  color: rgb(0, 0, 0)
 }
 
 .catalog-item:focus::before,
@@ -952,7 +1042,6 @@ margin-bottom: 47px;
   color: rgba(0,0,0,.3);
 }
 
-}
 .pagination-item a:focus,
 .pagination-item a:hover {
     background-color: #dfdfdf;
